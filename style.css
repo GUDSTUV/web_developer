@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 0.5fr repeat(4, 1fr);
+}
+
+/* header */
+.header {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./img/dd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    color: white;
+}
+
+.navbar{
+        height: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        
+}
+
+.link>ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 3rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+#search {
+    padding: 0.3rem;
+    border: none;
+    border-radius: 10px;
+}
+
+/* banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0 0 2rem;
+    padding: 2rem;
+}
+
+
+.banner .web h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+.banner .web p {
+    color: white;
+    text-align: justify;
+    margin: 1rem 0;
+    line-height: 1.5rem;
+}
+
+.banner input {
+    background-color: aqua;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.icons ul {
+    display: flex;
+    color: white;
+    gap: 2rem;
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.icons ul li a {
+    color: white;
+    font-size: larger;
+}
+
+.icons ul li a:hover {
+    color: aqua;
+}
+
+/* hero */
+.hero {
+    margin: 2rem;
+}
+
+.hero1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: gilroy;
+}
+
+.hero p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.service {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    column-gap: 2rem;
+}
+
+.service>* {
+    height: 12rem;
+        width: 11rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.service .bi {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+.service1 {
+    background-color: red;
+}
+
+.service2 {
+    background-color: gold;
+}
+
+.service3 {
+    background-color: rgb(60, 255, 0);
+}
+
+.service4 {
+    background-color: rgb(255, 166, 0);
+}
+
+/* hero2 */
+.hero2 {
+    background-color: rgb(59, 5, 93);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero2 h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.visual {
+    color: white;
+    margin-top: 4rem;
+    line-height: 2rem;
+}
+
+.strategies {
+    margin-top: 4rem;
+}
+
+.visual p {
+    margin-top: 1rem;
+}
+
+.visual button {
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    padding: 0.4rem;
+    color: white;
+}
+
+/* solution */
+.solution {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 5rem;
+    margin: 5rem 2rem 2rem 2rem;
+}
+
+.IT {
+    margin-top: 4rem;
+    line-height: 2rem;
+}
+
+.IT h1 {
+    color: aqua;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.IT button {
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    padding: 0.4rem;
+    color: white;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(59, 5, 93);
+}
+
+.contact-us {
+    margin-top: 2rem;
+}
+
+.contact-us h1 {
+    font-size: 2.8rem;
+    font-family: gilroy light;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.contact-us P {
+    color: white;
+    font-family: gilroy light;
+    margin-bottom: 1rem;
+}
+
+.contact-us .icons .fa {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.fa-facebook-square {
+    background-color: aqua;
+}
+
+#name,
+#email {
+    border: none;
+    padding: 0.7rem;
+    width: 20rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    border: none;
+    height: 8rem;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 15px;
+    margin: 1rem 0;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+.form button {
+    border: none;
+    font-size: larger;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 15px;
+    background-color: aqua;
+}
+
